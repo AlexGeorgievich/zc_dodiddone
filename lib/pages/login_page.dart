@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zc_dodiddone/theme/theme.dart';
+
+import 'main_page.dart';
 // import 'package:zc_dodiddone/theme/theme.dart';
 
 class LoginPage extends StatefulWidget {
@@ -91,7 +93,10 @@ class _LoginPageState extends State<LoginPage> {
               // кнопка "Войти"++++++++++++++++
               ElevatedButton(
                 onPressed: () {
-                  // Handle sign in/sign up logic here
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MainPage()));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: _isSignIn
