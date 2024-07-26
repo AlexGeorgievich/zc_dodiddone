@@ -69,9 +69,9 @@ class _MainPageState extends State<MainPage> {
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: DoDidDoneTheme.lightTheme.colorScheme.primary,
-        unselectedItemColor: Colors.grey,
+        // type: BottomNavigationBarType.fixed,
+        // selectedItemColor: DoDidDoneTheme.lightTheme.colorScheme.primary,
+        // unselectedItemColor: Colors.grey,
       ),
     );
   }
